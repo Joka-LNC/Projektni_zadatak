@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- End CSS -->
+		<!-- meta elements -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="some description">
+        <meta name="keywords" content="keyword 1, keyword 2, keyword 3, keyword 4, ...">
+		<title>Kontakt</title>
+	</head>
+<body>
+	<header>
+		<img class=zaglavlje src="smid_logo.jpg"></img>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Naslovnica</a></li>
+			  <li><a href="vijesti.html">Vijesti</a></li>
+			  <li><a href="kontakt.html">Kontakt</a></li>
+			  <li><a href="oNama.html">O nama</a></li>
+			  <li><a href="galerija.html">Galerija</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Kontakt</h1>
+		
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=tome%20mati%C4%87a%201&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps insert</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div><br><br>
+			
+			<form action="upload.php" id="contact_form" name="contact_form" method="POST">
+				<label for="fname">Ime:</label>
+				<input type="text" id="fname" name="firstname" placeholder="Unesite ime" required><br>
+
+				<label for="lname">Prezime</label>
+				<input type="text" id="lname" name="lastname" placeholder="Unesite prezime" required><br>
+				
+				<label for="lname">E-mail</label>
+				<input type="email" id="email" name="email" placeholder="Unesite e-mail adresu" required><br>
+
+				<div class="spol">
+				<label for="gender">Spol</label>
+				<div>
+					<input type="radio" id="male" name="gender" value="Male">
+					<label for="male" style="float: left">muško</label>
+				</div>
+				<div>
+					<input type="radio" id="female" name="gender" value="Male">
+					<label for="female" style="float: left">žensko</label>
+				</div>
+			</div>
+			<br>
+
+				<label for="country">Zemlja</label>
+				<select id="country" name="country">
+				  <option value="">Molim odaberite</option>
+				  <option value="Austria">Austrija</option>
+				  <option value="Bosnia and Herzegovina">Bosna i Hercegovina</option>
+				  <option value="Croatia" selected>Hrvatska</option>
+				  <option value="Hungary">Mađarska</option>
+				  <option value="Serbia">Srbija</option>
+				  <option value="Slovenia">Slovenija</option>
+				</select>
+
+				<label for="subject">Poruka</label>
+				<textarea id="subject" name="subject" placeholder="Ovdje unesite Vašu poruku" style="height:150px"></textarea>
+
+				<input type="submit" value="Pošalji">
+			</form>
+		</div>
+	</main>
+	<footer>
+	<p>Copyright &copy; 2023 Ivan Joskić</p>
+	</footer>
+</body>
+</html>
